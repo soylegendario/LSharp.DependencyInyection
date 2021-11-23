@@ -7,8 +7,8 @@ The most easier way to inject your services.
 Download package from Nuget.
 Decorate your services with `[Injectable]` specifying the injection type:
 
-    [Injectable(ServiceLifetime.Transient)]
-    public class MyPretty
+    [Injectable]	// Transient by default
+    public class MyPrettyService
     {
     }
 
