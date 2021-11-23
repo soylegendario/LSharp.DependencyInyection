@@ -32,7 +32,7 @@ namespace LSharp.DependencyInjection
                 from a in AppDomain.CurrentDomain.GetAssemblies().AsParallel()
                 from t in a.GetTypes()
                 let attributes = t.GetCustomAttributes(typeof(InjectableAttribute), true)
-                where attributes is { Length: > 0 }
+                where attributes.Length > 0
                 select new { Type = t, InjectableAttribute = attributes.Cast<InjectableAttribute>().First() };
             foreach (var o in injectableTypes)
             {
