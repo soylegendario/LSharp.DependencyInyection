@@ -10,6 +10,7 @@
         <RepositoryUrl>https://github.com/soylegendario/LSharp.DependencyInyection</RepositoryUrl>
         <PackageTags>c# di ioc asp.net</PackageTags>
         <TargetFrameworks>net5.0;netcoreapp3.1</TargetFrameworks>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
